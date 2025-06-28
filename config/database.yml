@@ -79,6 +79,4 @@ test:
 #
 production:
   <<: *default
-  database: farj_summary_production
-  username: farj_summary
-  password: <%= ENV["FARJ_SUMMARY_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
