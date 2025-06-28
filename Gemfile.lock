@@ -210,7 +210,7 @@ GEM
     nokogiri (1.18.8-x86_64-linux-musl)
       racc (~> 1.4)
     orm_adapter (0.5.0)
-    ostruct (0.1.0)
+    ostruct (0.6.2)
     overcommit (0.67.1)
       childprocess (>= 0.6.3, < 6)
       iniparse (~> 1.4)
@@ -403,7 +403,7 @@ DEPENDENCIES
   hotwire-livereload
   importmap-rails
   jbuilder
-  ostruct (~> 0.1.0)
+  ostruct (~> 0.6.2)
   overcommit
   pg (~> 1.1)
   puma (>= 5.0)
