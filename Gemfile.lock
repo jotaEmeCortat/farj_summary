@@ -89,8 +89,6 @@ GEM
     addressable (2.8.7)
       public_suffix (>= 2.0.2, < 7.0)
     ast (2.4.3)
-    autoprefixer-rails (10.4.21.0)
-      execjs (~> 2)
     base64 (0.3.0)
     benchmark (0.4.1)
     bigdecimal (3.2.2)
@@ -128,7 +126,6 @@ GEM
     drb (2.2.3)
     erb (5.0.1)
     erubi (1.13.1)
-    execjs (2.10.0)
     ffi (1.17.2-aarch64-linux-gnu)
     ffi (1.17.2-aarch64-linux-musl)
     ffi (1.17.2-arm-linux-gnu)
@@ -319,21 +316,6 @@ GEM
       rubocop-rspec (~> 3.5)
     ruby-progressbar (1.13.0)
     rubyzip (2.4.1)
-    sass (3.7.4)
-      sass-listen (~> 4.0.0)
-    sass-listen (4.0.0)
-      rb-fsevent (~> 0.9, >= 0.9.4)
-      rb-inotify (~> 0.9, >= 0.9.7)
-    sassc (2.4.0)
-      ffi (~> 1.9)
-    sassc-rails (2.1.2)
-      railties (>= 4.0.0)
-      sassc (>= 2.0)
-      sprockets (> 3.0)
-      sprockets-rails
-      tilt
-    scss_lint (0.60.0)
-      sass (~> 3.5, >= 3.5.5)
     securerandom (0.4.1)
     selenium-webdriver (4.33.0)
       base64 (~> 0.2)
@@ -352,8 +334,17 @@ GEM
     stimulus-rails (1.3.4)
       railties (>= 6.0.0)
     stringio (3.1.7)
+    tailwindcss-rails (4.2.3)
+      railties (>= 7.0.0)
+      tailwindcss-ruby (~> 4.0)
+    tailwindcss-ruby (4.1.10)
+    tailwindcss-ruby (4.1.10-aarch64-linux-gnu)
+    tailwindcss-ruby (4.1.10-aarch64-linux-musl)
+    tailwindcss-ruby (4.1.10-arm64-darwin)
+    tailwindcss-ruby (4.1.10-x86_64-darwin)
+    tailwindcss-ruby (4.1.10-x86_64-linux-gnu)
+    tailwindcss-ruby (4.1.10-x86_64-linux-musl)
     thor (1.3.2)
-    tilt (2.6.0)
     timeout (0.4.3)
     turbo-rails (2.0.16)
       actionpack (>= 7.1.0)
@@ -389,7 +380,6 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  autoprefixer-rails
   bootsnap
   brakeman
   bundler-audit
@@ -407,12 +397,11 @@ DEPENDENCIES
   rubocop
   rubocop-discourse
   rubocop-rails
-  sassc-rails
-  scss_lint
   selenium-webdriver
   simple_form!
   sprockets-rails
   stimulus-rails
+  tailwindcss-rails (~> 4.2)
   turbo-rails
   tzinfo-data
   web-console

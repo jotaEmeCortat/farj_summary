@@ -45,11 +45,8 @@ gem "bootsnap", require: false
 # gem "image_processing", "~> 1.2"
 
 gem "ostruct", "~> 0.1.0"
-gem "autoprefixer-rails"
 # gem "font-awesome-sass", "~> 6.1"
 gem "simple_form", github: "heartcombo/simple_form"
-gem "sassc-rails"
-gem 'scss_lint', require: false
 
 group :development, :test do
   gem "dotenv-rails"
@@ -82,3 +79,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "tailwindcss-rails", "~> 4.2"

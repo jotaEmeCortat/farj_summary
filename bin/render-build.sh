@@ -4,6 +4,11 @@
 set -o errexit
 
 bundle install
+
+# Build Tailwind CSS for production
+bin/rails tailwindcss:build
+
+# Precompile assets
 bin/rails assets:precompile
 bin/rails assets:clean
 
